@@ -22,9 +22,9 @@
         <nav class="navbar navbar-expand-sm navbar-light bg-warning">
             <div class="container">
                 <a href="#" class="navbar-brand">
-                <img src="image/logo.png" width="142">
+                <img src="image/logo.png" width="142" alt="Logo Finans">
                 </a>
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal" aria-label="Abrir navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="nav-principal">
@@ -52,7 +52,7 @@
     </header><!--/fim cabeçalho-->
 
     <main>
-        <section id="home"><!-- Início seção home-->
+        <section id="home" aria-labelledby="titulo-home"><!-- Início seção home-->
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 d-flex"><!--Textos da seção -->
@@ -63,7 +63,7 @@
     
                         <form class="mt-4 mb-4"><!-- Formulario -->
                             <div class="input-group input-group-lg">
-                                <input type="text" placeholder="Seu e-mail" class="form-control">
+                                <input type="email" placeholder="Seu e-mail" class="form-control" aria-label="Digite seu e-mail">
                                 <div class="input-group-append">
                                     <button type="button" class="btn btn-primary">Cadastre-se</button>
                                 </div>
