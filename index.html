@@ -52,39 +52,42 @@
     </header><!--/fim cabeçalho-->
 
     <main>
-        <!-- Seção home-->
+        <!-- Seção Home -->
         <section id="home" aria-labelledby="titulo-home">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 d-flex"><!--Textos da seção -->
-                       <div class="align-self-center">
-                        <h1 class="display-4">Suas contas, descomplicadas</h1>
-                        <P>Usado por mais de 1 milhão de pessoas, o Finans é uma ferramenta online que vai facilitar sua vida financeira.
-                        </P>
-    
-                        <form class="mt-4 mb-4"><!-- Formulario -->
-                            <div class="input-group input-group-lg">
-                                <input type="email" placeholder="Seu e-mail" class="form-control" aria-label="Digite seu e-mail">
-                                <div class="input-group-append">
-                                    <button type="button" class="btn btn-primary">Cadastre-se</button>
+                    <div class="col-md-6 d-flex"><!-- Textos da seção -->
+                        <article class="align-self-center">
+                            <h1 id="titulo-home" class="display-4">Suas contas, descomplicadas</h1>
+                            <p>Usado por mais de 1 milhão de pessoas, o Finans é uma ferramenta online que vai facilitar sua vida financeira.</p>
+
+                            <!-- Formulário -->
+                            <form class="mt-4 mb-4" aria-labelledby="form-cadastro">
+                                <label id="form-cadastro" for="email" class="visually-hidden">Digite seu e-mail para cadastro</label>
+                                <div class="input-group input-group-lg">
+                                    <input type="email" id="email" name="email" placeholder="Seu e-mail" class="form-control" aria-label="Digite seu e-mail" required>
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-primary" aria-label="Cadastrar-se no Finans">Cadastre-se</button>
+                                    </div>
                                 </div>
+                            </form>
+                            <!-- /Fim Formulário -->
+
+                            <p>Disponível para:</p>
+                            <div role="group" aria-label="Opções de download do aplicativo">
+                                <a href="#" class="btn btn-outline-light" aria-label="Baixar o Finans para Android">
+                                    <i class="fab fa-android fa-lg"></i> Android
+                                </a>
+                                <a href="#" class="btn btn-outline-light" aria-label="Baixar o Finans para iOS">
+                                    <i class="fab fa-apple fa-lg"></i> iOS
+                                </a>
                             </div>
-                        </form><!--/fim Formulario -->
-    
-                        <p>Disponível para
-                            <a href="#" class="btn btn-outline-light" aria-label="Baixar para Android">
-                                <i class="fab fa-android fa-lg"></i>
-                            </a>
-                            <a href="#" class="btn btn-outline-light" aria-label="Baixar para iOS">
-                                <i class="fab fa-apple fa-lg"></i>
-                            </a>
-                        </p>
-                        
-                       </div>
+                        </article>
                     </div>
-                    <div class="col-md-6 d-none d-md-block"><!--fim Textos da seção -->
-                        <img class="drop-shadow" src="image/capa-mulher.png" alt="Mulher utilizando aplicativo Finans">
-                     </div>
+                    <div class="col-md-6 d-none d-md-block"><!-- Imagem ilustrativa -->
+                        <img class="drop-shadow img-fluid" src="image/capa-mulher.png" alt="Mulher utilizando o aplicativo Finans em um smartphone">
+                    </div>
+                </div>
             </div>
         </section>
     
